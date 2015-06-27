@@ -1,4 +1,4 @@
-package net.watchscore.server.domain;
+package net.watchscore.server.domain.team;
 
 import java.util.Collection;
 

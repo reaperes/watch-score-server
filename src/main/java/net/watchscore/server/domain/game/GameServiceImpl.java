@@ -1,4 +1,4 @@
-package net.watchscore.server.domain;
+package net.watchscore.server.domain.game;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,13 +9,13 @@ import java.util.Collection;
 /**
  * @author Namhoon
  */
-@Service("teamService")
+@Service("gameService")
 @Transactional
-public class TeamServiceImpl implements TeamService {
+public class GameServiceImpl implements GameService {
 	@Autowired
-	private TeamRepository repository;
+	private GameRepository repository;
 
-	public Collection<Team> findAll() {
+	public Collection<Game> findAll() {
 		return repository.findAll();
 	}
 }

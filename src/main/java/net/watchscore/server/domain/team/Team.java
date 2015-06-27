@@ -1,4 +1,4 @@
-package net.watchscore.server.domain;
+package net.watchscore.server.domain.team;
 
 import lombok.Data;
 import org.hibernate.annotations.NaturalId;

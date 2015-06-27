@@ -1,6 +1,7 @@
-package net.watchscore.server.domain;
+package net.watchscore.server.domain.game;
 
 import lombok.Data;
+import net.watchscore.server.domain.team.Team;
 
 import javax.persistence.*;
 import java.util.Date;
