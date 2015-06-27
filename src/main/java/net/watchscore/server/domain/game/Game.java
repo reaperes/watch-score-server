@@ -20,10 +20,12 @@ public class Game {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date date;
 
-	@Column
+	@OneToOne
+	@JoinColumn(name = "id")
 	private Team home;
 
-	@Column
+	@OneToOne
+	@JoinColumn(name = "id")
 	private Team away;
 
 	@Column

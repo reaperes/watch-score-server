@@ -19,6 +19,6 @@ public class Team {
 	private Long id;
 
 	@NaturalId
-	@Column(nullable = false)
+	@Column(length = 10, nullable = false)
 	private String name;
 }
