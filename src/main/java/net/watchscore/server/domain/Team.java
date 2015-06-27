@@ -1,6 +1,7 @@
 package net.watchscore.server.domain;
 
 import lombok.Data;
+import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,8 +16,9 @@ import javax.persistence.Id;
 public class Team {
 	@Id
 	@GeneratedValue
-	private Integer id;
+	private Long id;
 
+	@NaturalId
 	@Column(nullable = false)
 	private String name;
 }
