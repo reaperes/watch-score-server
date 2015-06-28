@@ -13,7 +13,7 @@ CREATE TABLE game (
   date DATETIME,
   home INT,
   away INT,
-  state VARCHAR(10) COMMENT 'BEFORE, PLAYING, CANCEL, END',
+  state VARCHAR(10) COMMENT 'BEFORE, PLAYING, END',
   PRIMARY KEY (id)
 ) ENGINE = InnoDB;
 
@@ -30,3 +30,12 @@ INSERT INTO team(name) VALUES('KIA');
 INSERT INTO team(name) VALUES('롯데');
 INSERT INTO team(name) VALUES('LG');
 INSERT INTO team(name) VALUES('KT');
+
+-- --------------------
+-- Games data (sample)
+--
+-- INSERT INTO `game` (`id`,`date`,`home`,`away`,`state`) VALUES (1,'2015-06-28 19:36:10',2,9,'PLAYING');
+-- INSERT INTO `game` (`id`,`date`,`home`,`away`,`state`) VALUES (2,'2015-06-28 19:36:32',5,6,'PLAYING');
+-- INSERT INTO `game` (`id`,`date`,`home`,`away`,`state`) VALUES (3,'2015-06-28 19:36:41',10,1,'PLAYING');
+-- INSERT INTO `game` (`id`,`date`,`home`,`away`,`state`) VALUES (4,'2015-06-28 19:36:51',3,7,'PLAYING');
+-- INSERT INTO `game` (`id`,`date`,`home`,`away`,`state`) VALUES (5,'2015-06-28 19:37:01',4,8,'PLAYING');
